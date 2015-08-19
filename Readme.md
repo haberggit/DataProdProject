@@ -1,0 +1,1 @@
+This small Shiny application demonstrates Shiny's automatic UI updates. Input the *State* and the *Threshold Population* for cities to display.  The output is a map of the state and cities that meet the selection criteria.  Note that some nearby cities outside the state may also be displayed for informational purposes.  This is a feature of the Maps package.  

@@ -11,7 +11,6 @@ library(shiny)
 
 #data(state) #part of core R - state database
 choices <- state.name
-### NOTE, EVERYTHING WORKING ON THIS PAGE AS IS
 
 fluidPage(
   
@@ -24,7 +23,7 @@ fluidPage(
                    options = list(maxOptions=10)),
 
     sliderInput("minpop", label = "Cities with Min Population of:", 
-                min=4000, max=1000000, value=4000),
+                min=4000, max=1000000, value=40000),
 
     submitButton("Update View", icon("refresh"))    
   ),
@@ -32,8 +31,6 @@ fluidPage(
   mainPanel(
     textOutput("text1"),
     textOutput("text2"),
-    #textOutput("text3"),
-    #Need to make the plot larger (use California as example),
     plotOutput("City_map"))
 
 )
